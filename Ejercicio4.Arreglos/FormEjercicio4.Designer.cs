@@ -35,7 +35,7 @@ namespace Ejercicio4.Arreglos
             this.NombretextBox = new System.Windows.Forms.TextBox();
             this.EdadtextBox = new System.Windows.Forms.TextBox();
             this.MuestracomboBox = new System.Windows.Forms.ComboBox();
-            this.ingresarbutton = new System.Windows.Forms.Button();
+            this.guardarbutton = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -65,7 +65,7 @@ namespace Ejercicio4.Arreglos
             // 
             this.NombretextBox.Location = new System.Drawing.Point(140, 21);
             this.NombretextBox.Name = "NombretextBox";
-            this.NombretextBox.Size = new System.Drawing.Size(232, 20);
+            this.NombretextBox.Size = new System.Drawing.Size(118, 20);
             this.NombretextBox.TabIndex = 2;
             // 
             // EdadtextBox
@@ -78,20 +78,20 @@ namespace Ejercicio4.Arreglos
             // MuestracomboBox
             // 
             this.MuestracomboBox.FormattingEnabled = true;
-            this.MuestracomboBox.Location = new System.Drawing.Point(111, 103);
+            this.MuestracomboBox.Location = new System.Drawing.Point(137, 154);
             this.MuestracomboBox.Name = "MuestracomboBox";
             this.MuestracomboBox.Size = new System.Drawing.Size(121, 21);
             this.MuestracomboBox.TabIndex = 4;
             // 
-            // ingresarbutton
+            // guardarbutton
             // 
-            this.ingresarbutton.Location = new System.Drawing.Point(297, 54);
-            this.ingresarbutton.Name = "ingresarbutton";
-            this.ingresarbutton.Size = new System.Drawing.Size(107, 43);
-            this.ingresarbutton.TabIndex = 5;
-            this.ingresarbutton.Text = "INGRESAR";
-            this.ingresarbutton.UseVisualStyleBackColor = true;
-            this.ingresarbutton.Click += new System.EventHandler(this.ingresarbutton_Click);
+            this.guardarbutton.Location = new System.Drawing.Point(281, 21);
+            this.guardarbutton.Name = "guardarbutton";
+            this.guardarbutton.Size = new System.Drawing.Size(107, 43);
+            this.guardarbutton.TabIndex = 5;
+            this.guardarbutton.Text = "GUARDAR";
+            this.guardarbutton.UseVisualStyleBackColor = true;
+            this.guardarbutton.Click += new System.EventHandler(this.ingresarbutton_Click);
             // 
             // errorProvider1
             // 
@@ -99,17 +99,17 @@ namespace Ejercicio4.Arreglos
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(297, 103);
+            this.button1.Location = new System.Drawing.Point(140, 99);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(107, 49);
             this.button1.TabIndex = 6;
-            this.button1.Text = "GUARDAR";
+            this.button1.Text = "MOSTRAR";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(36, 172);
+            this.button2.Location = new System.Drawing.Point(36, 206);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(107, 49);
             this.button2.TabIndex = 7;
@@ -119,7 +119,7 @@ namespace Ejercicio4.Arreglos
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(165, 172);
+            this.button3.Location = new System.Drawing.Point(165, 206);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(107, 49);
             this.button3.TabIndex = 8;
@@ -135,7 +135,7 @@ namespace Ejercicio4.Arreglos
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.ingresarbutton);
+            this.Controls.Add(this.guardarbutton);
             this.Controls.Add(this.MuestracomboBox);
             this.Controls.Add(this.EdadtextBox);
             this.Controls.Add(this.NombretextBox);
@@ -156,7 +156,7 @@ namespace Ejercicio4.Arreglos
         private System.Windows.Forms.TextBox NombretextBox;
         private System.Windows.Forms.TextBox EdadtextBox;
         private System.Windows.Forms.ComboBox MuestracomboBox;
-        private System.Windows.Forms.Button ingresarbutton;
+        private System.Windows.Forms.Button guardarbutton;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button3;

@@ -39,21 +39,19 @@ namespace Ejercicio4.Arreglos
                 errorProvider1.SetError(NombretextBox, "");
                 errorProvider1.SetError(EdadtextBox, "");
             }
-
+            MessageBox.Show("Estudiante Guardado");
             datos.Add(NombretextBox.Text + " | " + EdadtextBox.Text);
             EdadtextBox.Text = "";
             NombretextBox.Text = "";
-
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             for (int i = 0; i < datos.Count; i++)
             {
-                MuestracomboBox.Items.Add(datos[i]);
-                
+                MuestracomboBox.Items.Add(datos[i]);   
             }
-            MessageBox.Show("Estudiante Guardado");
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -62,8 +60,7 @@ namespace Ejercicio4.Arreglos
             for (int i = 0; i < datos.Count; i++)
             {
                 datos.Sort();
-                MuestracomboBox.Items.Add(datos[i]);
-                
+                MuestracomboBox.Items.Add(datos[i]);             
             }
             MessageBox.Show("Nombres De Estudiantes de Forma Ascendentes");
         }
